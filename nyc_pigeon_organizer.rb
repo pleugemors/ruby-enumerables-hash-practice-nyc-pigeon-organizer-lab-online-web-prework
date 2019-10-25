@@ -23,14 +23,14 @@ def nyc_pigeon_organizer(data)
           if info_hash[name_array[row3]].has_key?(key1_name[row])
             if info_hash[name_array[row3]][key1_name[row]]== values[row2]
             else
-              info_hash[name_array[row3]][key1_name[row]] << "#{values[row2]}"
+              info_hash[name_array[row3]][key1_name[row]] << values[row2]
             end
           else
-            info_hash[name_array[row3]][key1_name[row]]= "#{values[row2]}"
+            info_hash[name_array[row3]][key1_name[row]]= values[row2]
           end
         else
           info_hash[name_array[row3]]= {key1_name[row] => []}
-          info_hash[name_array[row3]][key1_name[row]] << "#{values[row2]}"
+          info_hash[name_array[row3]][key1_name[row]] << {values[row2]
         end
         row3 += 1 
       end
