@@ -30,7 +30,7 @@ def nyc_pigeon_organizer(data)
           end
         else
           info_hash[name_array[row3]]= {key1_name[row] => []}
-          info_hash[name_array[row3]][key1_name[row]] << {values[row2]
+          info_hash[name_array[row3]][key1_name[row]] << values[row2]
         end
         row3 += 1 
       end
