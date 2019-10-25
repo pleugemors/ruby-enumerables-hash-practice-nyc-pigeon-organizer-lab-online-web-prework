@@ -13,10 +13,10 @@ def nyc_pigeon_organizer(data)
   
   row = 0
   while row < key1_name.size do 
-    values = data[key1_name[row]].keys
+    values = data[key1_name[row]].keys.to_s
     row2 = 0 
     while row2 < values.size do 
-      name_array = data[key1_name[row]][values[row2]]
+      name_array = data[key1_name[row]][values[row2]].to_s
       row3 = 0 
       while row3 < name_array.size do 
         if info_hash.has_key?(name_array[row3])
