@@ -39,6 +39,7 @@ def nyc_pigeon_organizer(data)
     row += 1 
     info_hash
   end
-  puts info_hash["Theo"][:gender]
+  puts info_hash
+  
   info_hash
 end
